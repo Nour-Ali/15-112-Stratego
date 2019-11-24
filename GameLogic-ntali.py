@@ -721,7 +721,6 @@ class StrategoGame():
     # Ensure both playes set up their boards
     def setUpBoard(self):
         print("Let's start setting up the board!")
-        # Set up my board then send confirmation to opponent
         self.theBoard.setUp(self.myArmy) 
         sendMessage(self.s, self.opponent, "BOARDSETUP")
         print("Waiting for your opponent to fniish setting up the board ....")
@@ -762,7 +761,7 @@ class StrategoGame():
                 action = input(">>  What action would you like to make on your turn?")
 
                 # User chooses to move a piece
-                if action.lower() == "MOVE":
+                if action.lower() == "move":
                     curx = input(">>   Move piece at row: ")
                     cury = input(">>   Move piece at column: ")
                     newx = input(">>   Move piece to new row: ")
@@ -788,11 +787,11 @@ class StrategoGame():
                         print("You have not entered a valid input!")
 
                 # User chooses to attack a piece
-                elif action.lower() == "ATTACK":
-                    curx = int(input(">>   My piece at row: ")) - 1
-                    cury = int(input(">>   My piece at column: ")) - 1
-                    newx = int(input(">>   Attack piece at row: ")) - 1
-                    newy = int(input(">>   Attack piece at column: ")) - 1
+                elif action.lower() == "attack":
+                    curx = input(">>   My piece at row: ")
+                    cury = input(">>   My piece at column: ")
+                    newx = input(">>   Attack piece at row: ")
+                    newy = input(">>   Attack piece at column: ")
 
                     # Ensure moves are all integers
                     validInt = "1023456789"
