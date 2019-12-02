@@ -1,12 +1,15 @@
 # 15-112-Stratego
-15-112 Final Project
-This repositry includes 3 files:
-* Insttuctions for playing the board game 'Stratego'
-* 'ntali-GameLogic' - A completed fully-working text-based interface for the board game 'Stratego', that is played online using a CMUQ sever that requires a 
-    username & password.
-* 'ntali-GameBoard' - A working graphical user interface for the online implementation of Stratgeo that also uses the CMUQ server & requires a username 
-    & password. To run this file, the library 'pygame' must be installed*, and the pictures uploaded in the repositry must also be saved 
-    in the same folder as this code.
-    
+Welcome to my 15-112 Final Project, an online implementation of the classic boardgame 'Stratego'!
+In this repository you will find:
+
+* My final project proposal
+
+* Instructions for playing Stratego
+
+* GameLogic file submitted for my first checkpoint: A text-based interface for the game, where the user logs in (with a username & password) to the CMUQ server and is presented with a menu of options, including sending and accepting game requests. To start a game, user must send a game request to friend, which is valid for 3 minutes. If the other player chooses to accept the request within the time limit, both players begin to setup their boards. If not, the game request is cancelled. The entire game is played using the python shell, where the user manually enters coordinated of each of thier soldiers in order, to be placed in a valid location on the board. Each soldier must be initially placed in the bottom four rows of the board, and in an unoccupied spot. Once both users have completed the setup of thier boards, the players take alternating turns, after the requesting player makes the first move. The user must choose between a 'move' or an 'attack', then manually enter coordinates of movements, and the board is displayed after each move. Once the game ends, the winner is displayed on the screen, and the players are free to request another game.
+
+* GameBoard file submitted for my first checkpoint: To run this file, the library 'pygame' must be installed*, and the pictures uploaded in the repositry must also be saved in the same folder as this code. This code handles the GUI for login window, home page & setup screen. The home screen allows a user to send friend & game requests as well as accept pending game & friend requests. If the home page is closed, any game requests sent by the user are cancelled, and any game requests sent to the user are declined. Once a game has been requested and accepted by the opponent, both players are presented with a board setup screen. The user may click on a valid location (bottom 4 rows) to place each of thier soldiers in turn, where the next soldier to be placed is previewed on the top left corner of the screen. The user may not place their soldier outside the allocated range or in an occupied spot. Once a user is done with their stup, a 'ready' message is automatically sent to opponent.
+
+* FinalSubmission file submitted for final checkpoint: (Building on from GameBoard file) Once both users have completed the setup of their boards, the players take alternating turns, after the requesting player makes the first move. During a player's turn, a 'move' is made by two consecutive left clicks (move from X to Y), and an 'attack' is made by two consecutive right clicks (X attacks Y). If an attack is made, opponent's pieces involved in attack is revealed to both players for 5 seconds, and then the result is displayed. To cancel a selection, press on the initially chosen piece once again. If a move/attack is not valid, an error message will appear on shell. Once the player makes a valid move in their turn, the opponent is allowed to make a move. Once the game ends, both players view the end screen.
+
 * To install pygame: https://www.pygame.org/wiki/GettingStarted
- 
