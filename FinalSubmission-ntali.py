@@ -4,6 +4,11 @@
 #    Name      : Nour Ali
 #    AndrewID  : Ntali
 
+# GUIDANCE FOR PYGAME DISPLAY : https://inventwithpython.com/makinggames.pdf
+# GUIDANCE FOR TKINTER DISPLAY :https://users.tricity.wsu.edu/~bobl/cpts481/tkinter_nmt.pdf
+# IMAGES : https://desktopgames.com.ua/games/102/stratego_rules_en.pdf
+
+
 ## ALL IMPORT STATEMENTS
 import sys, socket, time, pygame
 from pygame.locals import *
