@@ -1089,7 +1089,11 @@ class StrategoGame():
             # Determine location of click on board
             boxy, boxx = self.getBoxAtPixel(mouseX, mouseY)
             
-            if boxx != None and boxy != None:
+            # If game has not been exited
+            if self.gameEnded:
+                pass
+            
+            elif boxx != None and boxy != None:
 
                 # If click is on a box in the board
                 if soldiersPlaced <= 39 and mouseClicked == True:
